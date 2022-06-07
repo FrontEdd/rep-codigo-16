@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de prioridades</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <h1>Las prioridades para aplicar estilos son:</h1>
+    <hr>
+    <table>
+        <tr>
+            <th># Prioridad</th>
+            <th>Origen</th>
+            <th>Selector / Ejemplo</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>important!</td>
+            <td>style="color:red !important,"</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Inline</td>
+            <td>style="color:red;"</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>#id nesting</td>
+            <td>h1#elemnt{color:red;}</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>#id</td>
+            <td>#elemnt</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>.class nesting</td>
+            <td>h1.elemnt{color:red;}</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>.class</td>
+            <td>.elemnt{color:red;}</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>HTML element</td>
+            <td>default</td>
+        </tr>
+    </table>
+</body>
+</html>
