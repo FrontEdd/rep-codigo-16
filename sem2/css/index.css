@@ -51,3 +51,24 @@ ul {
     color: white;
     text-transform: lowercase;
 }
+
+@font-face {
+    font-family: "Neuton-Regular";
+    src: url("../fonts/Neuton-Regular.ttf");
+}
+@font-face {
+    font-family: "Neuton-Italic";
+    src: url("../fonts/Neuton-Italic.ttf");
+}
+@font-face {
+    font-family: "Neuton-Bold";
+    src: url("../fonts/Neuton-Bold.ttf");
+}
+
+.title-2 {
+    font-family: 'Neuton-Italic'
+}
+
+.text-1 {
+    font-family: 'Neuton-Regular';
+}
