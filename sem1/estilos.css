@@ -1,6 +1,8 @@
 h1 {
     color: gray;
     text-decoration: underline;
+    font-family: 'Prompt';
+    font-weight: 200;
 }
 
 h2 {
@@ -39,4 +41,19 @@ tr:nth-child(even) {
 th {
     background-color: #04AA6D;
     color: white;
+    font-family: 'Merriweather';
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.number {
+    font-family: 'Merriweather';
+    font-weight: 700;
+}
+
+td {
+    font-family: 'Merriweather';
+    font-weight: 700;
+    font-style: italic;
+    
 }
