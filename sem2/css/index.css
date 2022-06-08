@@ -1,5 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 h1 {
@@ -99,7 +101,7 @@ ul {
 
 .groove {
     border-style: groove;
-    border-color: blue;
+    border-color: lightcoral;
     border-width: 5px;
 }
 
@@ -116,7 +118,13 @@ ul {
 }
 
 .dotted {
-    border-style: dotted;
-    border-color: magenta;
-    border-width: 8px;
+    border: 3px dotted magenta;
+}
+
+.leftStyle {
+    border-left: solid red 5px;
+}
+
+.rightStyle {
+    border-right: solid red 5px;
 }
