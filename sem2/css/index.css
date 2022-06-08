@@ -129,3 +129,11 @@ ul {
 .rightStyle {
     border-right: solid red 5px;
 }
+
+.topStyle {
+    border-top: dashed 5px orange;
+}
+
+.bottom-doubleStyle {
+    border-bottom: double 6px gray;
+}
