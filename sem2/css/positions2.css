@@ -30,3 +30,22 @@ div {
     position: relative;
     top: 100px;
 }
+
+#in {
+    background-color: coral;
+}
+
+#us {
+    height: 100vh;
+    background-color: mediumseagreen;
+}
+
+#serv {
+    height: 100vh;
+    background-color: lightgreen;
+}
+
+#cont {
+    height: 100vh;
+    background-color: olive;
+}
