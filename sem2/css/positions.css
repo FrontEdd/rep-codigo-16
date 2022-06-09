@@ -4,4 +4,55 @@
     width: 400px;
     background-color: red;
     position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.padre {
+    height: 500px;
+    width: 500px;
+    background-color: aqua;
+    position: relative;
+}
+/* ** El hijo al no tener un relativo va a tomar al body como padre, no importa si esta dentro de un div */
+.hijo {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+}
+
+.bandera {
+    height: 100vh;
+    border: solid;
+    position: relative;
+}
+
+.green {
+    height: 100vh;
+    background-color: green;
+    width: 40%;
+    float: left;
+}
+
+.red {
+    height: 100vh;
+    background-color: red;
+    width: 60%;
+    float: right;
+}
+
+.shield {
+    background: url(../images/shield-portugal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(40% - 100px);
 }
