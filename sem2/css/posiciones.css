@@ -1,0 +1,34 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bg {
+    border: solid;
+    height: 200px;
+}
+
+.color-red {
+    background-color: red;
+}
+
+.color-green {
+    background-color: green;
+}
+
+.bg-img {
+    background: url(../../sem1/images/HTML5.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bg-miau {
+    background: url(../../sem2/images/fondos-pantalla-full-hd-animales_4.webp);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+.bg-forest {
+    background: url(../../sem2/images/forest.jpg);
+    background-position: center;
+}
