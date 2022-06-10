@@ -10,6 +10,15 @@ body {
     margin: auto;
 }
 
-.shadow {
-    box-shadow: 15px 15px;
+/* 1 param eje x (default derecha) */
+/* 2 param eje y (default abajo) */
+/* 3 param blur (difuminación) */
+/* 4 param spread (propagación) */
+/* 5 param color de sombra */
+.box-shadow {
+    box-shadow: 15px 15px 10px -10px lightyellow;
+}
+
+.text-shadow {
+    text-shadow: 15px 15px 5px lightyellow;
 }
