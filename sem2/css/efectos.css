@@ -13,6 +13,10 @@ h2 {
     -o-border-radius: 10pc;
 }
 
+h2:hover {
+    text-decoration: underline;
+}
+
 #contenedor {
     width: 200px;
     height: 200px;
