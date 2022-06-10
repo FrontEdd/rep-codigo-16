@@ -52,6 +52,12 @@ body {
     -o-border-radius: 5px;
 }
 
+#submit:hover {
+    background-color: aliceblue;
+    box-shadow: 2px 2px 2px gray;
+    color: black;
+}
+
 .formControl {
     margin-top: 20px;
 }
