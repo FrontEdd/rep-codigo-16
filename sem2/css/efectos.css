@@ -1,0 +1,15 @@
+
+body {
+    background-color: rgb(190, 190, 190);
+}
+
+#contenedor {
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    margin: auto;
+}
+
+.shadow {
+    box-shadow: 15px 15px;
+}
