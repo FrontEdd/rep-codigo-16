@@ -13,6 +13,13 @@ body {
     background: linear-gradient(red 50%, green 90%, yellow 100%);
 }
 
+#flag {
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    background: linear-gradient(to right,red 33.3%,white 33.3% 66.6%,red 66.6% 100%);
+}
+
 /* 1 param eje x (default derecha) */
 /* 2 param eje y (default abajo) */
 /* 3 param blur (difuminación) */
