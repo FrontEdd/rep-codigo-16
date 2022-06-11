@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+hr {
+    border-color: hsl(215, 51%, 70%);
+    margin: 20px 0;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+h1, h2 {
+    text-align: left;
+    padding-right: 10px;
+}
+
+h2, .icon-text-right {
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+}
+
+h2 strong {
+    color: hsl(0, 0%, 100%);
+}
+
+#main-container {
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+}
+
+#cont-int {
+    background-color: hsl(216, 50%, 16%);
+    width: 345px;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    top: calc(50% - 250px);
+    border-radius: 18px;
+}
+
+#equilibrium {
+    height: 50%;
+    width: 100%;
+    border-radius: 18px;
+}
+
+#avatar {
+    width: 30px;
+    border: solid hsl(0, 0%, 100%) 1px;
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    top: -5px;
+    margin-right: 5px;
+}
+
+#foot {
+    display: inline;
+    height: 40px;
+}
+
+.icon-text {
+    margin-left: 35px;
+}
+
+.icon-text-left {
+    float: left;
+    color: hsl(178, 100%, 50%);
+}
+
+.icon-text-right {
+    margin-left: 50px;
+}
+
+.foot {
+    margin-left: 50px;
+}
