@@ -1,0 +1,59 @@
+
+.container {
+    display: flex;
+    height: 100vh;
+    border: solid 3px;
+    /* Al activar flex, activamos sus propiedades */
+    
+    /* Alineamos los elementos de forma horizontal */
+    /* Tiene 6 posibles valores */
+    /* flex-start: alinea al lado izquierdo */
+    /* flex-end: alinea al lado derecho */
+    /* center: alinea al centro */
+    /* space-between: alinea de extremo a extremo */
+    /* space-evenly: separa a los elementos con espacios similares interno y externo */
+    /* space-around: */
+    justify-content: space-around;
+    
+    /* Alineamos los elementos de forma vertical */
+    align-items: center;
+    /* **Nota: se basa en la altura del elemento, de no tener altura un elemento no va a centrarlo */
+
+
+    /* **Flex tambien permite controlar la dirección de los elementos */
+    flex-direction: column;
+}
+
+.container div {
+    border: solid red 3px;
+    height: 300px;
+    width: 25%;
+}
+
+.container2 {
+    display: flex;
+    height: 100vh;
+    border: solid green 3px;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+.container2 div {
+    border: solid orange 3px;
+    height: 300px;
+    width: 20%;
+}
+
+.container3 {
+    display: flex;
+    height: 100vh;
+    border: solid cornflowerblue 3px;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+}
+
+.container3 div {
+    height: 300px;
+    width: 20%;
+    border: solid maroon 3px;
+}
