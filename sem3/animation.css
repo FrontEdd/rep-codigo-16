@@ -1,23 +1,59 @@
 
-
 #box {
     width: 200px;
     height: 200px;
     background-color: brown;
-    transition: width 6s, height 6s, background-color 6s;
-    -webkit-transition: width 6s, height 6s, background-color 6s;
-    -moz-transition: width 6s, height 6s, background-color 6s;
-    -ms-transition: width 6s, height 6s, background-color 6s;
-    -o-transition: width 6s, height 6s, background-color 6s;
+    transition: all 6s;
+    -webkit-transition: all 6s;
+    -moz-transition: all 6s;
+    -ms-transition: all 6s;
+    -o-transition: all 6s;
 }
 
 #box:hover {
     width: 400px;
     height: 400px;
     background-color: blue;
-    transition: width 2s, height 2s, background-color 2s;
-    -webkit-transition: width 2s, height 2s, background-color 2s;
-    -moz-transition: width 2s, height 2s, background-color 2s;
-    -ms-transition: width 2s, height 2s, background-color 2s;
-    -o-transition: width 2s, height 2s, background-color 2s;
+    transform: translate(50px, 50px);
+    transition: all 2s;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+    -webkit-transform: translate(50px, 50px);
+    -moz-transform: translate(50px, 50px);
+    -ms-transform: translate(50px, 50px);
+    -o-transform: translate(50px, 50px);
+}
+
+#flag {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: all 4s;
+    -webkit-transition: all 4s;
+    -moz-transition: all 4s;
+    -ms-transition: all 4s;
+    -o-transition: all 4s;
+}
+
+#flag:hover {
+    margin: auto;
+    width: 600px;
+    height: 200px;
+    transition: all 2s;
+}
+
+.red {
+    width: 33.33%;
+    height: 200px;
+    background-color: red;
+}
+
+.white {
+    width: 33.33%;
+    height: 200px;
+    border: solid 1px red;
+    background-color: white;
 }
