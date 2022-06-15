@@ -1,0 +1,23 @@
+
+
+#box {
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    transition: width 6s, height 6s, background-color 6s;
+    -webkit-transition: width 6s, height 6s, background-color 6s;
+    -moz-transition: width 6s, height 6s, background-color 6s;
+    -ms-transition: width 6s, height 6s, background-color 6s;
+    -o-transition: width 6s, height 6s, background-color 6s;
+}
+
+#box:hover {
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    transition: width 2s, height 2s, background-color 2s;
+    -webkit-transition: width 2s, height 2s, background-color 2s;
+    -moz-transition: width 2s, height 2s, background-color 2s;
+    -ms-transition: width 2s, height 2s, background-color 2s;
+    -o-transition: width 2s, height 2s, background-color 2s;
+}
