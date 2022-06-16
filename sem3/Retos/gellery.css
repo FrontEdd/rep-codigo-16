@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -56,6 +56,7 @@ section * {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 120px;
 }
 
 .container div {
@@ -96,4 +97,94 @@ section * {
 
 .child-four {
     background-image: url("/sem3/Retos/img/bolso.svg");
+}
+
+/* Foot */
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.foot hr {
+    margin-bottom: 56px;
+}
+
+.foot-container {
+    margin: auto;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot-subcontainer {
+    width: 22%;
+    display: flex;
+    padding: 0;
+    margin: 5px; 
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.foot-subcontainer div {
+    max-width: 297px;
+}
+
+.foot-one {
+    background-image: url("/sem3/Retos/img/casaca.svg");
+    height: 343px;
+}
+
+.foot-two {
+    background-image: url("/sem3/Retos/img/polo-rojo.svg");
+    height: 343px;
+}
+
+.foot-three {
+    background-image: url("/sem3/Retos/img/gorra-negra.svg");
+    height: 343px;
+}
+
+.foot-four {
+    background-image: url("/sem3/Retos/img/polo-bicolor.svg");
+    height: 343px;
+}
+
+.foot-txt {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.foot-txt p {
+    text-align: left;
+    font-family: 'Abel', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.foot-txt h3 {
+    text-align: left;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20.29px;
+}
+
+.foot-txt h4 {
+    text-align: right;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17.75px;
+    
+}
+
+span {
+    font-family: 'Abel', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 22px;
+    margin-right: 5px;
+    text-decoration: line-through;
 }
