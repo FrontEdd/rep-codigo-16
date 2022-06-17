@@ -1,0 +1,16 @@
+/* MAIN */
+
+#container {
+    margin: 50px auto;
+    width: 500px;
+}
+
+@media only screen and (max-width: 992px) {
+    #page {
+        display: flex;
+    }
+    
+    main {
+        width: 100%;
+    }
+}
