@@ -1,4 +1,3 @@
-/* Global */
 * {
     margin: 0;
     padding: 0;
@@ -86,72 +85,30 @@
     text-decoration: underline;
   }
   
-  /* Extra small devices (phones, 600px and down) */
-  @media only screen and (max-width: 600px) {
-    header {
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      height: 100vh;
-      width: 45%;
-    }
-    header ul {
-      margin-top: 20px;
-      flex-direction: column;
-      padding: 0;
-    }
-  }
-  
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  /* @media only screen and (min-width: 600px) {
-    body {
-      background-color: green;
-    }
-  } */
-  
-  /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (max-width: 992px) {
     header {
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
       height: 100vh;
-      width: 20%;
+      width: 15%;
       padding: 20px;
     }
-    
+  
     header:hover {
-        width: 20%;
-        padding: 20px 50px;
-        transition: all 1s;
-        -webkit-transition: all 1s;
-        -moz-transition: all 1s;
-        -ms-transition: all 1s;
-        -o-transition: all 1s;
+      width: 20%;
+      padding: 20px 50px;
+      transition: all 1s;
     }
-
+  
     header ul {
       margin-top: 20px;
       flex-direction: column;
       padding: 0;
     }
-
+  
     .dropdown-content {
-        margin-top: 0px;
-        margin-left: 40px;
-    }
-  }
-  
-  /* Large devices (laptops/desktops, 992px and up) */
-  /* @media only screen and (min-width: 992px) {
-    body {
-      background-color: purple;
-    }
-  } */
-  
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-    body {
-      background-color: black;
+      margin-top: 0px;
+      margin-left: 40px;
     }
   }
