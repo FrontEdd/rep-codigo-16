@@ -44,12 +44,12 @@ h2 {
 }
 
 .tr {
-    background-color: #eee;
+    background-color: var(--primary-color);
     border-bottom: 1px #666 dashed;
 }
 
 .tr:nth-child(even) {
-    background-color: #fff;
+    background-color: var(--secondary-color);
 }
 
 .tr:last-child {
