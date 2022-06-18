@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* **Colors */
+    --sunglow-color: #FECB01;
+    --orange-color: #FA550C;
+    --white-color: #FEFCFA;
+    --brown-sugar-color: #B26244;
+    --polished-color: #63A496;
+    --capri-color: #3EBDFC;
+    --gray-color: #BAB8AD;
+
+    /* **Fonts */
+    --font-fraunces: 'Fraunces', sans-serif;
+    --font-barlow: 'Barlow', sans-serif;
+}
+
+header {
+    background-color: var(--capri-color);
+}
+
+ul > li > a {
+    font-family: var(--font-barlow);
+}
+
+.contact {
+    font-family: var(--font-fraunces);
+}
