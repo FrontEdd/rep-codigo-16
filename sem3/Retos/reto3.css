@@ -22,10 +22,34 @@ header {
     background-color: var(--capri-color);
 }
 
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+/* Cuando un elemento es un hijo, como buena practica
+    usamos el símbolo '>' */
+ul > li {
+    margin: 20px;
+}
+
 ul > li > a {
     font-family: var(--font-barlow);
+    text-decoration: none;
+    color: var(--white-color);
 }
 
 .contact {
     font-family: var(--font-fraunces);
+    background-color: var(--white-color);
+    color: #000;
+    padding: 15px;
+    border-radius: 25px;
 }
