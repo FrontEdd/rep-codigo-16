@@ -11,6 +11,79 @@
     <h2>Condicionales + documento.write( )</h2>
 </body>
 <script type="text/javascript">
-    document.write("<h3>Notas</h3>");
+    // Código de JavaScript
+    document.write("<h3>Notas</h3>"); //Escribe dentro del html
+
+    let nota = 12; //La nota de un alumno
+    // nota = Number(prompt(" Ingrese nota "));
+
+    // if (isNaN(nota)) {
+    //     alert("Sólo números por favor");
+    //     nota = Number(prompt(" Ingrese nota "));
+    // }
+    
+    if ( nota < 11 ) {
+        document.write("<p>"+ nota +"</p>")
+        document.write("<p>Desaprobado</p>")
+    } else {
+        document.write("<p>"+ nota +"</p>")
+        document.write("<p>Aprobado</p>")
+    }
+
+    document.write("<hr/>");
+    document.write("<h3>Ángulos</h3>");
+
+    let angulo = 23;
+    document.write("<p>"+ angulo +"</p>");
+
+    if (angulo == 0) {
+        document.write("<p>Nulo.</p>");
+    } else if (angulo < 90) {
+        document.write("<p>Águdo.</p>");
+    } else if (angulo == 90) {
+        document.write("<p>Recto.</p>");
+    } else if (angulo < 180) {
+        document.write("<p>Obtuso.</p>");
+    } else if (angulo == 180) {
+        document.write("<p>Llano.</p>");
+    } else if (angulo < 360) {
+        document.write("<p>Concavo.</p>");
+    } else if (angulo == 360) {
+        document.write("<p>Completo.</p>");
+    } else {
+        document.write("<p>INEXISTENTE.</p>");
+    }
+
+    // if (angulo == 0) {
+    //     document.write("<p>Nulo</p>")
+    // } else {
+    //     if (angulo < 90) {
+    //     document.write("<p>Agudo</p>");
+    //     } else {
+    //         if (angulo == 90) {
+    //             document.write("<p>Recto</p>");
+    //         } else {
+    //             if (angulo < 180) {
+    //                 document.write("<p>Obtuso</p>");
+    //             } else {
+    //                 if (angulo == 180) {
+    //                     document.write("<p>Llano</p>");
+    //                 } else {
+    //                     if (angulo < 360) {
+    //                         document.write("<p>Concavo</p>");
+    //                     } else {
+    //                         if (angulo == 360) {
+    //                             document.write("<p>Completo</p>");
+    //                         } else {
+    //                             document.write("<p>INEXISTENTE</p>");
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+
 </script>
 </html>
