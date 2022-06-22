@@ -5,6 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Condicionales-JS</title>
+    <style type="text/css">
+        p {
+            text-transform: uppercase;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .frio {
+            color: blue;
+        }
+        .templado {
+            color: lightskyblue;
+        }
+        .calido {
+            color: brown;
+        }
+        .tropical {
+            color: green;
+        }
+    </style>
 </head>
 <body>
     <h1>Martes 21 de Junio</h1>
@@ -83,7 +102,21 @@
     //         }
     //     }
     // }
+    document.write("<hr/>");
+    document.write("<h3>Reto: Clima</h3>");
 
+    let temp;
+    temp = Number(prompt("Ingresa la temperatura del Clima"))
+
+    if (temp < 10) {
+        document.write("<p class='frio'>Frio</p>");
+    } else if (temp <= 16) {
+        document.write("<p class='templado'>Templado</p>");
+    } else if (temp <= 24) {
+        document.write("<p class='calido'>Cálido</p>");
+    } else {
+        document.write("<p class='tropical'>Tropical</p>");
+    } 
 
 </script>
 </html>
