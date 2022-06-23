@@ -131,7 +131,7 @@ const colores = ["Rojo", "Verde", "Amarillo", "Azul", "Verde", "Morado"];
 
 //! Si ustedes ponen un valor que no existe este retorna -1
 //!* Podemos usar esto para ver si un elemento existe en un array
-console.log(colores.indexOf("Verde"));
+// console.log(colores.indexOf("Verde"));
 
 // const busqueda = prompt("Ingrese el color");
 
@@ -141,4 +141,12 @@ console.log(colores.indexOf("Verde"));
 //   alert("El color no existe");
 // }
 
+document.write("<h1>Día 3 Ciclos While</h1>");
 
+// ** Un bucle que se genera una y otra vez mediante una condicional
+console.log('Ciclos While')
+let cont = 0
+while (cont < 10) {
+    console.log(cont);
+    cont += 1;
+}
