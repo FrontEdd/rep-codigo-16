@@ -14,6 +14,11 @@
             border-radius: 10px;
             padding: 10px;
         }
+
+        #container p {
+            text-align: center;
+            text-transform: uppercase;
+        }
     </style>
 </head>
 <body>
@@ -24,20 +29,29 @@
     const divContainer = document.getElementById('container');
     divContainer.innerHTML = "<h1>Bucles:</h1>";
 
-    
+
     let frutas = ['pera', 'manzana', 'limón', 'fresas', 'naranja'];
     
-    let iter = 0;
+    // Ciclo for:
+    for (let i = 0; i < frutas.length; i++) {
+        divContainer.innerHTML += "<p>" + frutas[i] + "</p>";
+    }
 
-        while (iter < frutas.length) {
+    // Ciclo While:
+    // let iter = 0;
+
+    //     while (iter < frutas.length) {
             
-            divContainer.innerHTML += "<p>" + frutas[iter] + "</p>";
-            if (frutas[iter] == 'limón') {
-                break;   
-            }
-            iter++;
-        }
+    //         divContainer.innerHTML += "<p>" + frutas[iter] + "</p>";
+    //         if (frutas[iter] == 'limón') {
+    //             break;   
+    //         }
+    //         iter++;
+    //     }
     divContainer.innerHTML += "<hr>";
+    divContainer.innerHTML += "<h2>Ejercicio: </h2>"
+
+    
 
     
 </script>
