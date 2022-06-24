@@ -49,10 +49,39 @@
     //         iter++;
     //     }
     divContainer.innerHTML += "<hr>";
-    divContainer.innerHTML += "<h2>Ejercicio: </h2>"
-
+    // divContainer.innerHTML += "<h2>Ejercicio: </h2>"
     
+    // const num = Number(prompt("Ingresa un número"))
 
+    // for (let i = 0; i <= 20; i++) {
+    //     divContainer.innerHTML += "<p>" + num + " x " + i + " = " + num*i + "</p>";     
+    // }
+
+    // Ciclo For of:
+    // Estructura de control para poder recorrer objetos iterables (Array, string, Map, set)
+
+    let productos = [
+        'mause',
+        'teclado',
+        'parlante',
+        'monitor',
+        'celular',
+        'adaptador',
+        'cargador'
+    ];
+        for (let p of productos) {
+            divContainer.innerHTML += "<p>" + p + "</p>"
+        }
     
+    divContainer.innerHTML += "<hr>";
+    
+    // Ciclo For in:
+    // Captura el índice
+
+    for (let p in productos) {
+        divContainer.innerHTML += "<p>" + p + "</p>"
+    }
+
+
 </script>
 </html>
