@@ -30,11 +30,15 @@
     let iter = 0;
 
         while (iter < frutas.length) {
+            
             divContainer.innerHTML += "<p>" + frutas[iter] + "</p>";
-
+            if (frutas[iter] == 'limón') {
+                break;   
+            }
             iter++;
         }
+    divContainer.innerHTML += "<hr>";
 
-    // Break:
+    
 </script>
 </html>
