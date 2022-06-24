@@ -74,13 +74,54 @@
         }
     
     divContainer.innerHTML += "<hr>";
+
+    const phrase = "Amo programar";
+    for (let l of phrase) {
+        divContainer.innerHTML += "<p> -" + l + "</p>"
+    }
+
+    divContainer.innerHTML += "<hr>";
     
     // Ciclo For in:
-    // Captura el índice
+    // Ayuda a recorrer objetos iterables, capturando el índice ( o llave o propiedad) de arrays, string, map, set, custom_objects
 
     for (let p in productos) {
         divContainer.innerHTML += "<p>" + p + "</p>"
     }
+
+    divContainer.innerHTML += "<hr>";
+    divContainer.innerHTML += "<h2>Ejercicio: </h2>"
+
+    array = 100  
+    let num = 0; 
+    for (let i = 10; i < array; i ++) {
+        if (i%10 == 7) num+=i;   
+    } 
+    divContainer.innerHTML += "<p>" + num + "</p>";
+
+    divContainer.innerHTML += "<hr>";
+
+
+    divContainer.innerHTML += "<h2>División</h2>";
+    // MODULO: operador para obtener el resultado de una división
+
+    const dividendo = 17;
+    const divisor = 3;
+    let cociente = dividendo / divisor;
+    let residuo = dividendo % divisor;
+
+    divContainer.innerHTML += "<p> Dividendo: " + dividendo + "</p>"
+    divContainer.innerHTML += "<p> Divisor: " + divisor + "</p>"
+    divContainer.innerHTML += "<p> Cociente: " + cociente + "</p>"
+    divContainer.innerHTML += "<p> Residuo: " + residuo + "</p>"
+
+    divContainer.innerHTML += "<hr>";
+    divContainer.innerHTML += "<h2>Ejercicio: </h2><h3>Determinar Números Primos</h3>"
+
+    // Realizar el algoritmo para determinar si un numero es primo o no
+    // https://www.youtube.com/watch?v=4UassTaI9Js&ab_channel=JohnOrtizOrdo%C3%B1ez
+    // https://www.youtube.com/watch?v=AKP3P8hZIDg&ab_channel=JohnOrtizOrdo%C3%B1ez
+    
 
 
 </script>
