@@ -19,16 +19,39 @@
             text-align: center;
             text-transform: uppercase;
         }
+
+        #prime-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 500px;
+            min-height: auto;
+            background-color: #67cf92;
+            margin: 20px auto;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        #prime-container div {
+            width: 14px;
+            margin: 10px;
+            padding: 5px;
+        }
+        
+        #prime-container div span {
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
     <div id="container"></div>
+    <div id="prime-container"></div>
 </body>
 <script>
 
     const divContainer = document.getElementById('container');
     divContainer.innerHTML = "<h1>Bucles:</h1>";
-
+    const divPrimeContainer = document.getElementById('prime-container');
 
     let frutas = ['pera', 'manzana', 'limón', 'fresas', 'naranja'];
     
@@ -119,10 +142,31 @@
     divContainer.innerHTML += "<h2>Ejercicio: </h2><h3>Determinar Números Primos</h3>"
 
     // Realizar el algoritmo para determinar si un numero es primo o no
-    // https://www.youtube.com/watch?v=4UassTaI9Js&ab_channel=JohnOrtizOrdo%C3%B1ez
-    // https://www.youtube.com/watch?v=AKP3P8hZIDg&ab_channel=JohnOrtizOrdo%C3%B1ez
     
+    const numPrim = Number(prompt("Ingresa un numero para mostrar la lisa de Números Primos"))
 
+    function listNumPrimos(max) {
+        if (typeof max != 'number' || !Number.isInteger(max)) {
+            return null;
+        }
+        let aux = [];
+        let primos = [];
+        for (let i = 2; i < max; ++i) {
+            if (!aux[i]) {
+                primos.push(i);
+                for (let j = i << 1; j <= max; j+=i) {
+                    aux[j] = true;   
+                }
+            }
+        }
+        return primos;
+    }
+    console.log(listNumPrimos(numPrim));
+    const list = listNumPrimos(numPrim)
+    for (const l of list) {
+        divPrimeContainer.innerHTML += "<div><span>" + l + "</span></div>"
+    }
+    
 
 </script>
 </html>
