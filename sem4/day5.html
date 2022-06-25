@@ -6,8 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Functions</title>
 </head>
+<style>
+    body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .container {
+        width: 400px;
+        margin: auto;
+        background-color: aquamarine;
+        min-height: 200px;
+        padding: 5px 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .reto1 {
+        width: 400px;
+        margin: auto;
+        background-color: darkkhaki;
+        min-height: 200px;
+        padding: 5px 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+</style>
 <body>
-    
+    <div class="container">
+        <input type="text" placeholder="Ingrese un número" id="input-num">
+        <button onclick="imprimirFactorial()">Factorial</button>
+    </div>
+    <br>
+    <div class="reto1">
+        <h3>La tabla de multiplicar:</h3>
+        <input type="text" placeholder="Ingresar un numero" id="multiplier">
+        <button onclick="printTable()">Multiplicador</button>
+    </div>
 </body>
 <script src="./js/day5.js"></script>
 </html>

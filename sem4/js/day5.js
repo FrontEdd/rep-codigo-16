@@ -48,9 +48,50 @@ console.log('Ejemplo2: ', ejem2)
 // Implementar un algoritmo que reciba 2 argumentos y los sume, el resultado se deberá imprimir en pantalla.
 
 function suma(x, y) {
-    return x + y;
+    const n1 = Number(x);
+    const n2 = Number(y);
+    if (isNaN(n1) || isNaN(n2)) {
+        return "No se pueden sumar";
+    }
+    return n1 + n2;
 }
 
 const sumatoria = suma(8, 9)
 console.log(sumatoria)
-document.write('La sumatoria de 8 y 9 es: ' + sumatoria)
+// document.write('<br>La sumatoria de 8 y 9 es: ' + sumatoria)
+
+// Hallando el factorial de un número
+function calcularFactorial(num) {
+    const n = Number(num);
+    if (isNaN(n)) {
+        return "No se puede realizar porque no es un número"
+    }
+    let resultado = 1;
+    for (let i = 1; i <= num; i++) {
+        resultado *= i;
+    }
+    return resultado;
+}
+
+function imprimirFactorial() {
+    const inputValue = document.getElementById("input-num").value;
+    const resultado = calcularFactorial(inputValue);
+    const container = document.querySelector(".container");
+    container.innerHTML += "<p>Factorial de " + inputValue + " es: " + resultado + "</p>"
+}
+
+// Reto: Crear una vista la cual tenga un input y un button
+// esta deberá pintar la tabla de multiplicar
+function printTable(x) {
+    const inputValue = document.getElementById("multiplier").value;
+    const reto = document.querySelector(".reto1");
+    
+    if (isNaN(inputValue)) {
+        reto.innerHTML += "No es un número"
+    } else {
+        for (let i = 1; i <= 12; i++) {
+            let resultado = inputValue*i
+              reto.innerHTML += "<p>" + inputValue + " x " + i + " = " + resultado
+          }
+    }
+}
