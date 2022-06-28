@@ -18,7 +18,12 @@ for (const o in object) {
 // * en forEach no existe el return
 
 const alumnos = ['Juan', ' Pepe', 'Luis', ' Maria', 'Carla', 'Ale']
+// La forma en la cual usamos forEach es la siguiente
+// el forEach es una funcion de los arrays
 
+// Es esta fumcion forEach tenemos 2 cosas,
+//1: El value => Es el valor que extraemos en cada interacion
+//2: El index => Es la posicion del elemento
 alumnos.forEach((value, index) => {
     console.log('index => ', index);
     console.log('value => ', value);
