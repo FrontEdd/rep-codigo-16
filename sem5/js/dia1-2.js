@@ -30,3 +30,26 @@ variableH1.onclick = () => {
     console.log("Click desde el h1");
     variableH1.innerText = "Cambiando el texto";
   };
+
+
+  const users = [];
+  const form = document.querySelector("#form-store-user");
+
+
+  form.onsubmit = (e) => {
+    
+
+    e.preventDefault();
+    console.log(e.target);
+
+
+    const formData = new FormData(e.target);
+    const user = {};
+
+    for (const [key, value] of formData.entries()) {
+        user[key] = value;
+        console.log(user[key])
+    }
+    users.push(user);
+    console.log(users)
+  }
