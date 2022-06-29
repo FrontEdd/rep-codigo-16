@@ -30,6 +30,7 @@ const prodIterforEach = products.forEach((product) => {
 // console.log(product.name);
 });
 
+
 // ? "map"
 // queremos agregar un nuevo campo al array de objetos
 // ese campo se llamara descuente que sera el precio - 100 soles
@@ -68,6 +69,7 @@ for (const edad of edades) {
     e.push(Math.pow(edad, 2))
 }
 console.log('cuadrados for-of: ',e);
+
 
 // ? "filter"
 // ? Es el hermano de 'map', porque 'filter' también retorna un array de 
@@ -145,3 +147,50 @@ const filtroShirt = clothes.filter((clothe) =>
 );
 
 console.log('filtroShirt: ', filtroShirt);
+
+
+// ? "find"
+
+const numbers = [10, 20, 30, 40, 50, 60, 70];
+const numerosMayores = numbers.filter((number, index) => number > 30);
+console.log(numerosMayores);
+
+// ? Retorna un elemento, es decir nos da una búsqueda de solamente 1 elemnto
+// ? OJO: 'find' no retorna un array, el solo retorna un elemento
+// el elemnto que retorne find sera el primero que encuentre
+// por ende como en la condicion dice > 30
+// va a buscar al numero mayor a este y al primero que encuentro lo va a retornar
+
+const numeroMayoresFind = numbers.find((number) => number > 30);
+console.log("numeroMayoresFind", numeroMayoresFind);
+
+const cars = [
+    {
+        model: "GLA 200",
+        price: 34000,
+        brand: "Mercedez",
+      },
+      {
+        model: "A 200",
+        price: 14000,
+        brand: "Mercedez",
+      },
+      {
+        model: "X6",
+        price: 34000,
+        brand: "BMW",
+      },
+];
+
+// Queremos el primer elemento de la lista que sea de la marca "mercedez"
+const findMercedez = cars.find((car) => car.brand === "Mercedez");
+console.log('find-Mercedez: ', findMercedez);
+
+
+// ? "findIndex"
+// ? Hermano menor de 'find' (siendo lo mismo), pero retorna el índice <i>
+
+const findIndex = cars.findIndex((car) => car.brand === "Mercedez");
+const filtroBMW = cars.findIndex((car) => car.brand === "BMW");
+console.log("find-Index", findIndex);
+console.log("findBMW", filtroBMW);
