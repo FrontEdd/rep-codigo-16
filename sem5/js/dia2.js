@@ -55,3 +55,16 @@ console.log('map: ', productsIterMap)
 
 // !Cuando decimos que forEach no retorna nada quiere decir que no se
 // !puede guardar dentro de una variable
+
+
+const edades = [23, 21, 34, 45, 28, 30];
+
+// * Esta es un arrow function 'inline'
+const edadesAlCuadrado = edades.map((edad) => Math.pow(edad, 2));
+console.log('cuadrados map: ', edadesAlCuadrado);
+
+let e = [];
+for (const edad of edades) {
+    e.push(Math.pow(edad, 2))
+}
+console.log('cuadrados for-of: ',e);
