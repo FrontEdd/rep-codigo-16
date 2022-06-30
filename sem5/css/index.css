@@ -91,3 +91,12 @@ img {
   border-radius: 4px;
   color: #fff;
 }
+
+#btn-clean {
+  border: solid rgb(145, 12, 12);
+  padding: 8px;
+  background-color: rgb(255, 255, 255);
+  width: 120px;
+  border-radius: 4px;
+  color: rgb(145, 12, 12);
+}

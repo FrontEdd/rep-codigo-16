@@ -104,11 +104,14 @@ const container = document.querySelector(".container");
 
 const inputSearch = document.querySelector("#input-search");
 const btnSearch = document.querySelector("#btn-search");
+const cleanSearch = document.querySelector("#btn-clean");
 
 function createCards(arrayDeDatos) {
   // Se acuerdan que el otro dia mencionamos que antes de una iteracion debemos
   // limiar el container
   container.innerHTML = "";
+
+  inputSearch.value = "";
 
   if (arrayDeDatos.length === 0) {
     container.innerHTML = "<h2>No se encontro resultados</h2>";
@@ -168,3 +171,5 @@ btnSearch.onclick = function () {
   // luego del filtro a quien debemos llamar?
   createCards(filtro);
 };
+
+cleanSearch.onclick = () => createCards(laptops);
