@@ -21,7 +21,7 @@ $(function () {
   if (arrayTask.length > 0) {
     // aca iteremos el array y pintemos las tareas
     arrayTask.forEach((task) => {
-      createInputTask(task.id, task.text);
+      createInputTask(task.id, task.text, task.status);
     });
   }
 });
@@ -36,7 +36,7 @@ btnTask.click(function () {
   inputTask.val("");
   inputTask.focus();
 
-  createInputTask(task.id, task.text);
+  createInputTask(task.id, task.text, task.status);
 
   // para ocultar un elemento usamos hide()
   // hide() => para ocultar
@@ -58,10 +58,10 @@ function deleteTask(element) {
     updateTask(id, "delete");
   }
   
-  function createInputTask(id, text) {
+  function createInputTask(id, text, status) {
     $("<div>", {
       html: `
-        <input data-id="${id}" type="checkbox"><span>${text}</span>
+        <input data-id="${id}" type="checkbox"><span class="${status}">${text}</span>
         <button>✏️</button>
         <button>👁</button>
         <button onclick="deleteTask(this)">❌</button>
