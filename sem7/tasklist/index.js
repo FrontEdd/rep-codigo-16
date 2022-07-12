@@ -19,10 +19,13 @@ const sectionTask = $("#section-task");
 
 btnTask.click(function () {
     const text = inputTask.val();
-    console.log(text);
+    inputTask.val("");
+    inputTask.focus();
 
+    // inputTask.fadeOut(2000);
+
+    
     // sectionTask.append(`<h1>${text}</h1>`);
-
     // Tambien se puede crear un elemento <div>
     $("<div>", {
         html:
@@ -32,5 +35,17 @@ btnTask.click(function () {
         <button>👁</button>
         <button>❌</button>
         `
-    }).appendTo(sectionTask);
+    })
+    .appendTo(sectionTask)
+    .hide()
+    .fadeIn(1000);
+
+    $("div").hover(
+        function () {
+            $(this).css("background-color", "#cdcdcd");
+    },
+        function () {
+            $(this).css("background-color","#fff")
+        }
+    )
 })
