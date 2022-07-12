@@ -55,31 +55,56 @@ function deleteTask(element) {
     });
   
     const id = container.children("input").data("id");
-    updateTask(id, "delete");
-  }
-  
-  function createInputTask(id, text, status) {
-    $("<div>", {
-      html: `
-        <input data-id="${id}" type="checkbox"><span class="${status}">${text}</span>
-        <button>✏️</button>
-        <button>👁</button>
-        <button onclick="deleteTask(this)">❌</button>
-      `,
-    })
-      .appendTo(sectionTask)
-      .hide()
-      .fadeIn(1000);
-  
-    $("div").hover(
-      // este estilo se va a mantener
-      function () {
-        $(this).css("background-color", "#cdcdcd");
-      },
-      // si ponemos otra funcion separa por , entendera que se ejecutara
-      // cuando saque el mouse el element
-      function () {
-        $(this).css("background-color", "#fff");
-      }
-    );
-  }
+    updateTask(id, "status", "delete");
+}
+
+function saveTask(element, id) {
+    const container = $(element).parent();
+    const containerFather = $(element).parent().parent()
+    const newText = container.children("input").val();
+    updateTask(id, "text", newText);
+    container.children().hide();
+    containerFather.children().show();
+    containerFather.children("span").text(newText);
+
+}
+
+function editTask(element) {
+  const container = $(element).parent();
+  const id = container.children("input").data("id");
+  container.children().hide();
+  container.append(
+    `
+    <div>
+    <input placeholder="editar tarea"/>
+    <button onclick="saveTask(this, ${id})">✅</button>
+    </div>
+    `
+  );
+}
+
+function createInputTask(id, text, status) {
+  $("<div>", {
+    html: `
+      <input data-id="${id}" type="checkbox"><span class="${status}">${text}</span>
+      <button onclick="editTask(this)">✏️</button>
+      <button>👁</button>
+      <button onclick="deleteTask(this)">❌</button>
+    `,
+  })
+    .appendTo(sectionTask)
+    .hide()
+    .fadeIn(1000);
+
+  $("div").hover(
+    // este estilo se va a mantener
+    function () {
+      $(this).css("background-color", "#cdcdcd");
+    },
+    // si ponemos otra funcion separa por , entendera que se ejecutara
+    // cuando saque el mouse el element
+    function () {
+      $(this).css("background-color", "#fff");
+    }
+  );
+}
