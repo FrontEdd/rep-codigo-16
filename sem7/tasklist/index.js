@@ -19,6 +19,8 @@ const sectionTask = $("#section-task");
 
 btnTask.click(function () {
     const text = inputTask.val();
+    const task = storeTask(text);
+
     inputTask.val("");
     inputTask.focus();
 
