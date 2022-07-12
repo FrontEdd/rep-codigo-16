@@ -16,6 +16,12 @@ function storeTask(text) {
   return task;
 }
 
+function updateTask(id, status) {
+    const task = arrayTask.find((task) => task.id === id);
+    task.status = status;
+    saveInLocalStorage();
+}
+
 function saveInLocalStorage() {
   localStorage.setItem("tasks", JSON.stringify(arrayTask));
 }
