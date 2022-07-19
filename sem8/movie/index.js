@@ -5,11 +5,12 @@ function renderCards(movies) {
   movies.forEach((movie) => {
 
     containerMovies.innerHTML += `
-        <div class="col-12 col-sm-4 col-md-3 col-lg-3">
+        <div class="col">
           <div class="card my-3" >
             <img
               src="${movie.images["Poster Art"].url}"
               class="card-img-top"
+              onerror="this.onerror=null;this.src='https://icon-library.com/images/no-camera-icon/no-camera-icon-5.jpg';"
               alt=""
             />
             <div class="card-body">
