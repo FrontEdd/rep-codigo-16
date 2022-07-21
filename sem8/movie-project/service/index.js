@@ -29,6 +29,21 @@ export const getMovies = async () => {
 };
 
 /* *
+ * Esta función va a traer las peliculas de mockApi
+ */
+
+export const getMoviesFromMockApi = async () => {
+  try {
+    const response = await fetch(mockAPIUrl);
+    const data = await response.json();
+
+    return data;
+  } catch (error) {
+    return error;
+  }
+};
+
+/* *
  * Esta función va a crear una pelicula en mockApi
  * recordemos que como es para crear usaremos POST
  */

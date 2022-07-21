@@ -1,10 +1,11 @@
 // ? Este archivo contiene la lógica del DOM
 
-import { getMovies, storeMovieMockApi } from "./service/index.js";
+import { getMovies, getMoviesFromMockApi, storeMovieMockApi } from "./service/index.js";
 
 const btnGetMovies = document.querySelector("#btn-get-movies");
 const containerMovies = document.querySelector("#container-movies")
 const btnSaveApi = document.querySelector("#btn-save-api");
+const btnGetMoviesFromMockApi = document.querySelector("#btn-get-movies-mock-api");
 const moviesWithImages = [];
 
 btnGetMovies.onclick = async function () {
@@ -31,6 +32,11 @@ btnSaveApi.onclick = function () {
     await storeMovieMockApi(movie);
   })
 };
+
+btnGetMoviesFromMockApi.onclick = function () {
+    const movies = getMoviesFromMockApi();
+    console.log(movies);
+}
 
 function renderMovie(movie) {
     const movies = document.querySelectorAll("#container-movies .col");
