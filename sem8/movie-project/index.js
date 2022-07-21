@@ -4,6 +4,8 @@ import { getMovies } from "./service/index.js";
 
 const btnGetMovies = document.querySelector("#btn-get-movies");
 const containerMovies = document.querySelector("#container-movies")
+const btnSaveApi = document.querySelector("#btn-save-api");
+const moviesWithImages = [];
 
 btnGetMovies.onclick = async function () {
   const movies = await getMovies();
@@ -20,11 +22,19 @@ btnGetMovies.onclick = async function () {
         // Si la petición de la img esta 'ok' renderizamos la pelicula
         renderMovie(movie);
     }
-    console.log(response);
   })
 };
 
+btnSaveApi.onclick = function () {
+  console.log(moviesWithImages);
+};
+
 function renderMovie(movie) {
+    const movies = document.querySelectorAll("#container-movies .col");
+    if (movies.length >= 20) return;
+
+    moviesWithImages.push(movie);
+
     containerMovies.innerHTML += `
     <div class="col">
       <div class="card my-3">
