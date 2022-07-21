@@ -1,0 +1,1 @@
+// ? Este archivo contiene la lógica del DOM
