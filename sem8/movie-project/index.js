@@ -1,6 +1,6 @@
 // ? Este archivo contiene la lógica del DOM
 
-import { getMovies } from "./service/index.js";
+import { getMovies, storeMovieMockApi } from "./service/index.js";
 
 const btnGetMovies = document.querySelector("#btn-get-movies");
 const containerMovies = document.querySelector("#container-movies")
@@ -27,6 +27,9 @@ btnGetMovies.onclick = async function () {
 
 btnSaveApi.onclick = function () {
   console.log(moviesWithImages);
+  moviesWithImages.forEach(async (movie) => {
+    await storeMovieMockApi(movie);
+  })
 };
 
 function renderMovie(movie) {
