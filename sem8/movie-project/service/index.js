@@ -7,13 +7,13 @@
  * Eliminar => DELETE
  */
 
-import { urlMovies, mockAPIUrl } from './config';
+import { urlMovies, mockAPIUrl } from "./config.js";
 
 /* *
 *Función que retorna las 100 peliculas
 */
 
-const getMovies = async () => {
+export const getMovies = async () => {
     try {
         const response = await fetch(urlMovies); //Retorna un promesa
         /* * 'data' tiene 2 keys
